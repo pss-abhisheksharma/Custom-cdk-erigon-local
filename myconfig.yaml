@@ -1,0 +1,32 @@
+datadir: /data/erigon/monsoon
+chain: dynamic-monsoon
+http: true
+private.api.addr: localhost:9093
+zkevm.l2-chain-id: 1980
+zkevm.l2-sequencer-rpc-url: "http://localhost:8545"
+zkevm.l2-datastreamer-url: "localhost:6900"  
+zkevm.l1-chain-id: 11155111
+zkevm.l1-rpc-url: https://eth-sepolia.g.alchemy.com/v2/fS4ROczIJ3yT8R52y0sVw3XJ7mLkpqVW
+
+zkevm.address-sequencer: "0x05847333A0bab3a543C74112Ea042a7a69bdDeeb"
+zkevm.address-zkevm: "0x5492c432727e347099F7A73eCB138Bd48c5c8C16"
+zkevm.address-rollup: "0x236598da6695d00fC3d814D9B36422d1A90f7863"
+zkevm.address-ger-manager: "0x469DA90b736eC66D0B086846552aaf5171bf95f1"
+
+zkevm.default-gas-price: 1200000000
+zkevm.max-gas-price: 0
+zkevm.gas-price-factor: 0.15
+
+zkevm.l1-rollup-id: 1
+zkevm.l1-block-range: 25000
+zkevm.l1-query-delay: 5000
+zkevm.l1-first-block: 4789190
+txpool.disable: true
+torrent.port: 42071
+
+externalcl: true
+http.api: [eth, debug, net, trace, web3, erigon, zkevm]
+http.addr: 0.0.0.0
+http.vhosts: any
+http.corsdomain: any
+ws: true
